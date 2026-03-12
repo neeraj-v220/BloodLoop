@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request - BloodLoop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <h1>BloodLoop</h1>
+        <p>Urgent Blood Requirements.</p>
+    </div>
+
+    <div class="card">
+        <h2 class="card-title">Submit a Blood Request</h2>
+        <form id="requestForm">
+            <div class="form-group">
+                <label for="patientName">Patient Name</label>
+                <input type="text" id="patientName" placeholder="Jane Doe" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="reqBloodGroup">Required Blood Group</label>
+                    <select id="reqBloodGroup" required>
+                        <option value="" disabled selected>Select Group</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="reqPhone">Contact Phone</label>
+                    <input type="tel" id="reqPhone" placeholder="+1 (555) 000-0000" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="reqCity">City</label>
+                    <input type="text" id="reqCity" placeholder="New York" required>
+                </div>
+                <div class="form-group">
+                    <label for="hospital">Hospital Name</label>
+                    <input type="text" id="hospital" placeholder="City General Hospital" required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn">
+                <i class="fas fa-paper-plane" style="margin-right: 8px;"></i> Submit Request
+            </button>
+            <div id="requestMessage" class="message"></div>
+        </form>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+        <a href="register.html" class="nav-link"><i class="fas fa-user-plus"></i> Register</a>
+        <a href="search.html" class="nav-link"><i class="fas fa-search"></i> Search Donors</a>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

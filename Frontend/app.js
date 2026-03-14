@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = "https://bloodloop-api.onrender.com/api";
 
 // Helper to show messages
 function showMessage(elementId, text, isError = false) {

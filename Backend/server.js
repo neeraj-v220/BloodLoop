@@ -4,7 +4,7 @@ dns.setServers(['8.8.8.8', '8.8.4.4']);
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
-const Request = require("./models/Request");
+const Request = require("./models/request");
 const Donor = require("./models/Donor");
 const app = express();
 
